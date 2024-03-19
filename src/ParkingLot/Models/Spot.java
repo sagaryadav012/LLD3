@@ -5,6 +5,12 @@ public class Spot {
     private SpotStatus spotStatus;
     private String name;
 
+    public Spot(VehicleType vehicleType, SpotStatus spotStatus, String name) {
+        this.vehicleType = vehicleType;
+        this.spotStatus = spotStatus;
+        this.name = name;
+    }
+
     public VehicleType getVehicleType() {
         return vehicleType;
     }

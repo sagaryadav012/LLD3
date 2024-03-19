@@ -3,6 +3,7 @@ package ParkingLot.Models;
 public class Gate extends BaseModel{
     private String name;
     private GateType gateType;
+    private Operator operator;
 
     public String getName() {
         return name;
@@ -18,5 +19,13 @@ public class Gate extends BaseModel{
 
     public void setGateType(GateType gateType) {
         this.gateType = gateType;
+    }
+
+    public Operator getOperator() {
+        return operator;
+    }
+
+    public void setOperator(Operator operator) {
+        this.operator = operator;
     }
 }

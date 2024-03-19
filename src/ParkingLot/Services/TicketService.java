@@ -6,4 +6,5 @@ import ParkingLot.Models.VehicleType;
 
 public interface TicketService {
     Ticket generateTicket(int gateId, String vehicleNumber, String vehicleType) throws Exception;
+    Ticket getTicketById(int ticketId);
 }
